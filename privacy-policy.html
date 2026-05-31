@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - Lære Norsk | Privacy Policy - Lære Norsk</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --primary-dark: #1557b0;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #202124;
+            --text-secondary: #5f6368;
+            --border: #e0e0e0;
+            --accent: #34a853;
+            --section-gap: 2.5rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .header .date {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .lang-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .lang-toggle button {
+            padding: 0.5rem 1.5rem;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .lang-toggle button.active,
+        .lang-toggle button:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border);
+        }
+
+        .section h2 {
+            color: var(--primary);
+            font-size: 1.35rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--bg);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section h2 .icon {
+            font-size: 1.4rem;
+        }
+
+        .section h3 {
+            color: var(--text);
+            font-size: 1.05rem;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section p {
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+        }
+
+        .section ul {
+            color: var(--text-secondary);
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .section ul li {
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight-box {
+            background: #e8f5e9;
+            border-right: 4px solid var(--accent);
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        [dir="ltr"] .highlight-box {
+            border-right: none;
+            border-left: 4px solid var(--accent);
+        }
+
+        .highlight-box p {
+            color: #1b5e20;
+            font-weight: 500;
+        }
+
+        .third-party-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .third-party-table th,
+        .third-party-table td {
+            padding: 0.75rem 1rem;
+            text-align: right;
+            border-bottom: 1px solid var(--border);
+        }
+
+        [dir="ltr"] .third-party-table th,
+        [dir="ltr"] .third-party-table td {
+            text-align: left;
+        }
+
+        .third-party-table th {
+            background: var(--bg);
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .third-party-table td {
+            color: var(--text-secondary);
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contact-card h2 {
+            justify-content: center;
+            border-bottom: none;
+        }
+
+        .contact-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .en { display: none !important; }
+        .ar { display: block !important; }
+
+        body.show-en .en { display: block !important; }
+        body.show-en .ar { display: none !important; }
+
+        .app-logo {
+            width: 64px;
+            height: 64px;
+            background: #ffab00;
+            border-radius: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 900;
+            color: #1a237e;
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 { font-size: 1.5rem; }
+            .section { padding: 1.5rem; }
+            .third-party-table { font-size: 0.8rem; }
+            .third-party-table th,
+            .third-party-table td { padding: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="app-logo">MN</div>
+    <h1 class="ar">سياسة الخصوصية</h1>
+    <h1 class="en">Privacy Policy</h1>
+    <div class="subtitle ar">Lære Norsk</div>
+    <div class="subtitle en">Lære Norsk</div>
+    <div class="date ar">آخر تحديث: ٣٠ مايو ٢٠٢٦</div>
+    <div class="date en">Last updated: May 30, 2026</div>
+    <div class="lang-toggle">
+        <button id="btn-ar" class="active" onclick="switchLang('ar')">العربية</button>
+        <button id="btn-en" onclick="switchLang('en')">English</button>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- Introduction -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128220;</span> مقدمة</h2>
+            <p>مرحبًا بك في تطبيق "Lære Norsk". نحن نقدّر خصوصيتك ونلتزم بحماية بياناتك الشخصية. توضّح هذه السياسة كيفية جمع بياناتك واستخدامها وحمايتها عند استخدامك لتطبيقنا.</p>
+            <p>باستخدامك للتطبيق، فإنك توافق على الممارسات الموضّحة في هذه السياسة.</p>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128220;</span> Introduction</h2>
+            <p>Welcome to "Lære Norsk". We value your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and protect your data when you use our app.</p>
+            <p>By using the app, you agree to the practices described in this policy.</p>
+        </div>
+    </div>
+
+    <!-- Data Collection -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128202;</span> البيانات التي نجمعها</h2>
+
+            <h3>بيانات الحساب</h3>
+            <ul>
+                <li>عنوان البريد الإلكتروني (عند التسجيل بالبريد الإلكتروني)</li>
+                <li>الاسم وصورة الملف الشخصي (عند التسجيل عبر Google أو Facebook)</li>
+                <li>صورة الملف الشخصي (إذا اخترت إضافتها من معرض الصور)</li>
+            </ul>
+
+            <h3>بيانات التعلّم</h3>
+            <ul>
+                <li>تقدمك في الدروس والمستويات</li>
+                <li>نتائج التمارين والاختبارات</li>
+                <li>إحصائيات الاستخدام (مثل أيام التعلّم المتتالية)</li>
+            </ul>
+
+            <h3>التسجيلات الصوتية</h3>
+            <ul>
+                <li>تسجيلات صوتية لتمارين النطق</li>
+                <li>تُرسل التسجيلات إلى الخادم للتحليل ثم تُحذف فورًا بعد المعالجة</li>
+                <li>لا يتم تخزين أي تسجيلات صوتية بشكل دائم</li>
+            </ul>
+
+            <h3>بيانات المصادقة البيومترية</h3>
+            <ul>
+                <li>يدعم التطبيق تسجيل الدخول بالبصمة أو التعرف على الوجه</li>
+                <li>تتم معالجة البيانات البيومترية محليًا على جهازك فقط ولا تُرسل إلى خوادمنا</li>
+            </ul>
+
+            <h3>بيانات الإشعارات</h3>
+            <ul>
+                <li>رمز الإشعارات (Push Token) لإرسال تذكيرات التعلّم اليومية</li>
+            </ul>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128202;</span> Data We Collect</h2>
+
+            <h3>Account Data</h3>
+            <ul>
+                <li>Email address (when registering via email)</li>
+                <li>Name and profile photo (when signing in via Google or Facebook)</li>
+                <li>Profile photo (if you choose to add one from your photo library)</li>
+            </ul>
+
+            <h3>Learning Data</h3>
+            <ul>
+                <li>Your progress through lessons and levels</li>
+                <li>Exercise and quiz results</li>
+                <li>Usage statistics (such as learning streaks)</li>
+            </ul>
+
+            <h3>Audio Recordings</h3>
+            <ul>
+                <li>Voice recordings for pronunciation exercises</li>
+                <li>Recordings are sent to our server for analysis and deleted immediately after processing</li>
+                <li>No audio recordings are stored permanently</li>
+            </ul>
+
+            <h3>Biometric Authentication Data</h3>
+            <ul>
+                <li>The app supports fingerprint or face recognition login</li>
+                <li>Biometric data is processed locally on your device only and is never sent to our servers</li>
+            </ul>
+
+            <h3>Notification Data</h3>
+            <ul>
+                <li>Push notification token for daily learning reminders</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Data Usage -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#127919;</span> كيف نستخدم بياناتك</h2>
+            <p>نستخدم بياناتك للأغراض التالية فقط:</p>
+            <ul>
+                <li>إنشاء حسابك وإدارته والمصادقة عليه</li>
+                <li>مزامنة تقدمك في التعلّم عبر الأجهزة المختلفة</li>
+                <li>تقديم ملاحظات ذكية على نطقك باستخدام الذكاء الاصطناعي</li>
+                <li>إرسال تذكيرات يومية لتشجيعك على التعلّم</li>
+                <li>تحسين تجربة التطبيق وتطوير المحتوى التعليمي</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p>&#9989; نحن لا نبيع بياناتك الشخصية لأي طرف ثالث.</p>
+                <p>&#9989; لا يحتوي التطبيق على أي إعلانات.</p>
+            </div>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#127919;</span> How We Use Your Data</h2>
+            <p>We use your data for the following purposes only:</p>
+            <ul>
+                <li>Creating, managing, and authenticating your account</li>
+                <li>Syncing your learning progress across devices</li>
+                <li>Providing AI-powered pronunciation feedback</li>
+                <li>Sending daily learning reminders</li>
+                <li>Improving the app experience and educational content</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p>&#9989; We do NOT sell your personal data to any third party.</p>
+                <p>&#9989; The app does NOT contain any advertisements.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Storage -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128190;</span> تخزين البيانات</h2>
+            <p>يتم تخزين بياناتك بطريقتين:</p>
+
+            <h3>التخزين المحلي</h3>
+            <p>يتم حفظ تقدمك وإعداداتك محليًا على جهازك باستخدام AsyncStorage. تبقى هذه البيانات على جهازك ولا تُرسل إلى خوادمنا إلا عند المزامنة.</p>
+
+            <h3>التخزين السحابي</h3>
+            <p>تُخزّن بيانات حسابك وتقدمك في التعلّم على خوادم Supabase المؤمّنة لتمكين المزامنة بين الأجهزة.</p>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128190;</span> Data Storage</h2>
+            <p>Your data is stored in two ways:</p>
+
+            <h3>Local Storage</h3>
+            <p>Your progress and settings are saved locally on your device using AsyncStorage. This data stays on your device and is only sent to our servers during sync.</p>
+
+            <h3>Cloud Storage</h3>
+            <p>Your account data and learning progress are stored on secure Supabase servers to enable cross-device syncing.</p>
+        </div>
+    </div>
+
+    <!-- Third-party Services -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128279;</span> خدمات الطرف الثالث</h2>
+            <p>نستخدم الخدمات التالية لتشغيل التطبيق:</p>
+
+            <table class="third-party-table">
+                <thead>
+                    <tr>
+                        <th>الخدمة</th>
+                        <th>الغرض</th>
+                        <th>البيانات المشتركة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Supabase</strong></td>
+                        <td>المصادقة وتخزين البيانات</td>
+                        <td>البريد الإلكتروني، بيانات التقدم</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Sign-In</strong></td>
+                        <td>تسجيل الدخول</td>
+                        <td>الاسم، البريد الإلكتروني، الصورة</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Facebook Login</strong></td>
+                        <td>تسجيل الدخول</td>
+                        <td>الاسم، البريد الإلكتروني، الصورة</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OpenAI API</strong></td>
+                        <td>تحليل النطق بالذكاء الاصطناعي</td>
+                        <td>التسجيلات الصوتية (مؤقتًا)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Expo Notifications</strong></td>
+                        <td>تذكيرات التعلّم</td>
+                        <td>رمز الإشعارات</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>تُرسل التسجيلات الصوتية إلى OpenAI عبر خادم وسيط (proxy) خاص بنا ولا تُرسل مباشرة من جهازك. يتم حذف التسجيلات فور معالجتها.</p>
+            <p>لكل خدمة من هذه الخدمات سياسة خصوصية خاصة بها، وننصحك بالاطلاع عليها:</p>
+            <ul>
+                <li><a href="https://supabase.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Supabase</a></li>
+                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Google</a></li>
+                <li><a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener">سياسة خصوصية Facebook</a></li>
+                <li><a href="https://openai.com/privacy" target="_blank" rel="noopener">سياسة خصوصية OpenAI</a></li>
+            </ul>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128279;</span> Third-Party Services</h2>
+            <p>We use the following services to operate the app:</p>
+
+            <table class="third-party-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                        <th>Shared Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Supabase</strong></td>
+                        <td>Authentication & data storage</td>
+                        <td>Email, progress data</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Sign-In</strong></td>
+                        <td>Login</td>
+                        <td>Name, email, photo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Facebook Login</strong></td>
+                        <td>Login</td>
+                        <td>Name, email, photo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OpenAI API</strong></td>
+                        <td>AI pronunciation analysis</td>
+                        <td>Audio recordings (temporary)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Expo Notifications</strong></td>
+                        <td>Learning reminders</td>
+                        <td>Push token</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Audio recordings are sent to OpenAI through our own server proxy and are not sent directly from your device. Recordings are deleted immediately after processing.</p>
+            <p>Each of these services has its own privacy policy, which we encourage you to review:</p>
+            <ul>
+                <li><a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a></li>
+                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+                <li><a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener">Facebook Privacy Policy</a></li>
+                <li><a href="https://openai.com/privacy" target="_blank" rel="noopener">OpenAI Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Data Security -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128274;</span> أمان البيانات</h2>
+            <p>نتخذ إجراءات مناسبة لحماية بياناتك، تشمل:</p>
+            <ul>
+                <li>تشفير جميع الاتصالات باستخدام بروتوكول HTTPS/TLS</li>
+                <li>تأمين المصادقة عبر Supabase مع دعم المصادقة الثنائية</li>
+                <li>عدم تخزين كلمات المرور بشكل نصي (تُخزّن مُشفّرة)</li>
+                <li>معالجة البيانات البيومترية محليًا على جهازك فقط</li>
+                <li>حذف التسجيلات الصوتية فورًا بعد التحليل</li>
+            </ul>
+            <p>على الرغم من حرصنا على حماية بياناتك، لا يمكن لأي نظام إلكتروني ضمان أمان مطلق بنسبة 100%.</p>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128274;</span> Data Security</h2>
+            <p>We take appropriate measures to protect your data, including:</p>
+            <ul>
+                <li>Encrypting all communications using HTTPS/TLS</li>
+                <li>Secure authentication through Supabase with two-factor authentication support</li>
+                <li>Passwords are never stored in plain text (they are stored encrypted)</li>
+                <li>Biometric data is processed locally on your device only</li>
+                <li>Audio recordings are deleted immediately after analysis</li>
+            </ul>
+            <p>While we strive to protect your data, no electronic system can guarantee 100% absolute security.</p>
+        </div>
+    </div>
+
+    <!-- Your Rights -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#9994;</span> حقوقك</h2>
+            <p>لديك الحقوق التالية فيما يتعلق ببياناتك:</p>
+            <ul>
+                <li><strong>الوصول:</strong> يمكنك طلب نسخة من بياناتك الشخصية المخزنة لدينا</li>
+                <li><strong>التصحيح:</strong> يمكنك تحديث معلومات حسابك في أي وقت من داخل التطبيق</li>
+                <li><strong>الحذف:</strong> يمكنك طلب حذف حسابك وجميع بياناتك المرتبطة به</li>
+                <li><strong>الإشعارات:</strong> يمكنك إيقاف تذكيرات التعلّم في أي وقت من إعدادات التطبيق أو إعدادات جهازك</li>
+            </ul>
+            <p>لممارسة أي من هذه الحقوق، تواصل معنا عبر البريد الإلكتروني المذكور أدناه.</p>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#9994;</span> Your Rights</h2>
+            <p>You have the following rights regarding your data:</p>
+            <ul>
+                <li><strong>Access:</strong> You can request a copy of your personal data stored with us</li>
+                <li><strong>Correction:</strong> You can update your account information at any time from within the app</li>
+                <li><strong>Deletion:</strong> You can request deletion of your account and all associated data</li>
+                <li><strong>Notifications:</strong> You can turn off learning reminders at any time from the app settings or your device settings</li>
+            </ul>
+            <p>To exercise any of these rights, contact us via the email address listed below.</p>
+        </div>
+    </div>
+
+    <!-- Children's Privacy -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128118;</span> خصوصية الأطفال</h2>
+            <p>تطبيقنا غير موجّه للأطفال دون سن 13 عامًا. نحن لا نجمع بيانات شخصية عن قصد من الأطفال دون هذا السن.</p>
+            <p>إذا اكتشفنا أننا جمعنا بيانات من طفل دون 13 عامًا بدون إذن ولي الأمر، سنقوم بحذف هذه البيانات فورًا.</p>
+            <p>إذا كنت وليّ أمر وتعتقد أن طفلك قد زوّدنا ببيانات شخصية، يُرجى التواصل معنا لاتخاذ الإجراء اللازم.</p>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128118;</span> Children's Privacy</h2>
+            <p>Our app is not directed at children under the age of 13. We do not knowingly collect personal data from children under this age.</p>
+            <p>If we discover that we have collected data from a child under 13 without parental consent, we will delete that data immediately.</p>
+            <p>If you are a parent and believe your child has provided us with personal data, please contact us so we can take appropriate action.</p>
+        </div>
+    </div>
+
+    <!-- Changes to Policy -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128260;</span> تعديلات على السياسة</h2>
+            <p>قد نقوم بتحديث هذه السياسة من وقت لآخر. سنُعلمك بأي تغييرات جوهرية عبر التطبيق أو البريد الإلكتروني.</p>
+            <p>ننصحك بمراجعة هذه الصفحة دوريًا للاطلاع على أي تحديثات. استمرارك في استخدام التطبيق بعد نشر التعديلات يعني موافقتك عليها.</p>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128260;</span> Changes to This Policy</h2>
+            <p>We may update this policy from time to time. We will notify you of any significant changes through the app or via email.</p>
+            <p>We encourage you to review this page periodically for updates. Your continued use of the app after changes are published constitutes acceptance of those changes.</p>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section contact-card">
+        <div class="ar">
+            <h2><span class="icon">&#128231;</span> تواصل معنا</h2>
+            <p>إذا كان لديك أي أسئلة أو استفسارات حول سياسة الخصوصية هذه، لا تتردد في التواصل معنا:</p>
+            <p><strong>المطوّر:</strong> Mesesilia Labs</p>
+            <p><strong>البريد الإلكتروني:</strong> <a href="mailto:e.mmnaguib@gmail.com">e.mmnaguib@gmail.com</a></p>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128231;</span> Contact Us</h2>
+            <p>If you have any questions or concerns about this privacy policy, feel free to contact us:</p>
+            <p><strong>Developer:</strong> Mesesilia Labs</p>
+            <p><strong>Email:</strong> <a href="mailto:e.mmnaguib@gmail.com">e.mmnaguib@gmail.com</a></p>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="ar">&copy; ٢٠٢٦ Lære Norsk. Mesesilia Labs. جميع الحقوق محفوظة.</div>
+    <div class="en">&copy; 2026 Lære Norsk. Mesesilia Labs. All rights reserved.</div>
+</div>
+
+<script>
+    function switchLang(lang) {
+        const body = document.body;
+        const btnAr = document.getElementById('btn-ar');
+        const btnEn = document.getElementById('btn-en');
+
+        if (lang === 'en') {
+            body.classList.add('show-en');
+            body.setAttribute('dir', 'ltr');
+            document.documentElement.setAttribute('lang', 'en');
+            document.documentElement.setAttribute('dir', 'ltr');
+            btnEn.classList.add('active');
+            btnAr.classList.remove('active');
+        } else {
+            body.classList.remove('show-en');
+            body.setAttribute('dir', 'rtl');
+            document.documentElement.setAttribute('lang', 'ar');
+            document.documentElement.setAttribute('dir', 'rtl');
+            btnAr.classList.add('active');
+            btnEn.classList.remove('active');
+        }
+    }
+</script>
+
+</body>
+</html>

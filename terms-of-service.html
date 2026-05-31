@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتفاقية الاستخدام - Lære Norsk | Terms of Service - Lære Norsk</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --primary-dark: #1557b0;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #202124;
+            --text-secondary: #5f6368;
+            --border: #e0e0e0;
+            --accent: #34a853;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+        .header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 3rem 1.5rem; text-align: center; }
+        .header h1 { font-size: 2rem; margin-bottom: 0.5rem; font-weight: 700; }
+        .header .subtitle { font-size: 1.1rem; opacity: 0.9; }
+        .header .date { margin-top: 1rem; font-size: 0.9rem; opacity: 0.8; }
+        .lang-toggle { display: flex; justify-content: center; gap: 0.5rem; margin-top: 1.5rem; }
+        .lang-toggle button { padding: 0.5rem 1.5rem; border: 2px solid white; background: transparent; color: white; border-radius: 25px; cursor: pointer; font-size: 0.95rem; font-weight: 600; transition: all 0.3s ease; }
+        .lang-toggle button.active, .lang-toggle button:hover { background: white; color: var(--primary); }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+        .section { background: var(--card-bg); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid var(--border); }
+        .section h2 { color: var(--primary); font-size: 1.35rem; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--bg); display: flex; align-items: center; gap: 0.5rem; }
+        .section h2 .icon { font-size: 1.4rem; }
+        .section p { color: var(--text-secondary); margin-bottom: 0.75rem; }
+        .section ul { color: var(--text-secondary); padding-right: 1.5rem; padding-left: 1.5rem; margin-bottom: 0.75rem; }
+        .section ul li { margin-bottom: 0.4rem; }
+        .highlight-box { background: #e8f5e9; border-right: 4px solid var(--accent); border-left: 4px solid var(--accent); padding: 1rem 1.25rem; border-radius: 8px; margin: 1rem 0; }
+        .highlight-box p { color: #1b5e20; font-weight: 500; }
+        .contact-card { background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%); border-radius: 12px; padding: 2rem; text-align: center; }
+        .contact-card h2 { justify-content: center; border-bottom: none; }
+        .contact-card a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        .footer { text-align: center; padding: 2rem; color: var(--text-secondary); font-size: 0.85rem; }
+        .en { display: none !important; }
+        .ar { display: block !important; }
+        body.show-en .en { display: block !important; }
+        body.show-en .ar { display: none !important; }
+        .version-badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.85rem; margin-top: 0.5rem; }
+        .app-logo { width: 64px; height: 64px; background: #ffab00; border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 900; color: #1a237e; margin-bottom: 12px; }
+        @media (max-width: 600px) { .header h1 { font-size: 1.5rem; } .section { padding: 1.5rem; } }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="app-logo">MN</div>
+    <h1 class="ar">اتفاقية الاستخدام</h1>
+    <h1 class="en">Terms of Service</h1>
+    <div class="subtitle ar">Lære Norsk</div>
+    <div class="subtitle en">Lære Norsk</div>
+    <div class="version-badge">الإصدار 1.0</div>
+    <div class="date ar">آخر تحديث: ٣١ مايو ٢٠٢٦</div>
+    <div class="date en">Last updated: May 31, 2026</div>
+    <div class="lang-toggle">
+        <button id="btn-ar" class="active" onclick="switchLang('ar')">العربية</button>
+        <button id="btn-en" onclick="switchLang('en')">English</button>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- 1. Acceptance -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#9989;</span> ١. قبول الاتفاقية</h2>
+            <p>باستخدامك لتطبيق "Lære Norsk" (المشار إليه بـ "التطبيق")، فإنك توافق على الالتزام بهذه الاتفاقية. إذا كنت لا توافق على أي من هذه الشروط، يرجى عدم استخدام التطبيق.</p>
+            <p>يتم تشغيل التطبيق وتطويره بواسطة Mesesilia Labs (المشار إليها بـ "نحن" أو "الشركة").</p>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#9989;</span> 1. Acceptance of Terms</h2>
+            <p>By using the "Lære Norsk" application (referred to as "the App"), you agree to be bound by these terms. If you do not agree to any of these terms, please do not use the App.</p>
+            <p>The App is operated and developed by Mesesilia Labs (referred to as "we" or "the Company").</p>
+        </div>
+    </div>
+
+    <!-- 2. Description -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128218;</span> ٢. وصف الخدمة</h2>
+            <p>Lære Norsk هو تطبيق تعليمي لتعلم اللغة النرويجية، يقدم:</p>
+            <ul>
+                <li>دروس ومفردات نرويجية مع ترجمة عربية</li>
+                <li>بطاقات تعليمية تفاعلية مع نطق صوتي</li>
+                <li>اختبارات متنوعة لتقييم المستوى</li>
+                <li>تقييم النطق باستخدام الذكاء الاصطناعي</li>
+                <li>مواقف حياتية ومحادثات تدريبية</li>
+                <li>نظام تتبع التقدم والإنجازات</li>
+            </ul>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128218;</span> 2. Service Description</h2>
+            <p>Lære Norsk is an educational application for learning Norwegian, offering:</p>
+            <ul>
+                <li>Norwegian lessons and vocabulary with Arabic translation</li>
+                <li>Interactive flashcards with audio pronunciation</li>
+                <li>Various quizzes for level assessment</li>
+                <li>AI-powered pronunciation evaluation</li>
+                <li>Real-life situations and conversation practice</li>
+                <li>Progress tracking and achievements system</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 3. Account -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128100;</span> ٣. حساب المستخدم</h2>
+            <p>لاستخدام التطبيق، يجب عليك إنشاء حساب باستخدام بريدك الإلكتروني أو حساب Google أو Facebook. أنت مسؤول عن:</p>
+            <ul>
+                <li>الحفاظ على سرية معلومات حسابك</li>
+                <li>جميع الأنشطة التي تتم من خلال حسابك</li>
+                <li>تقديم معلومات دقيقة وصحيحة عند التسجيل</li>
+                <li>إبلاغنا فوراً في حالة أي استخدام غير مصرح به لحسابك</li>
+            </ul>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128100;</span> 3. User Account</h2>
+            <p>To use the App, you must create an account using your email, Google, or Facebook account. You are responsible for:</p>
+            <ul>
+                <li>Maintaining the confidentiality of your account information</li>
+                <li>All activities that occur under your account</li>
+                <li>Providing accurate and truthful information during registration</li>
+                <li>Notifying us immediately of any unauthorized use of your account</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 4. Acceptable Use -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128077;</span> ٤. الاستخدام المقبول</h2>
+            <p>أنت توافق على عدم:</p>
+            <ul>
+                <li>استخدام التطبيق لأي غرض غير قانوني أو غير مصرح به</li>
+                <li>محاولة الوصول غير المصرح به إلى أنظمتنا أو بيانات المستخدمين الآخرين</li>
+                <li>نسخ أو توزيع أو تعديل محتوى التطبيق دون إذن مسبق</li>
+                <li>استخدام التطبيق بطريقة قد تضر بالخدمة أو تعطلها</li>
+                <li>إنشاء حسابات متعددة بهدف إساءة الاستخدام</li>
+                <li>استخدام أدوات آلية لجمع البيانات من التطبيق</li>
+            </ul>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128077;</span> 4. Acceptable Use</h2>
+            <p>You agree not to:</p>
+            <ul>
+                <li>Use the App for any unlawful or unauthorized purpose</li>
+                <li>Attempt unauthorized access to our systems or other users' data</li>
+                <li>Copy, distribute, or modify App content without prior permission</li>
+                <li>Use the App in any way that could harm or disrupt the service</li>
+                <li>Create multiple accounts for the purpose of abuse</li>
+                <li>Use automated tools to collect data from the App</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 5. Intellectual Property -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#169;</span> ٥. الملكية الفكرية</h2>
+            <p>جميع المحتويات في التطبيق، بما في ذلك النصوص والصور والأصوات والتصاميم والشعارات والبرمجيات، هي ملكية حصرية لـ Mesesilia Labs ومحمية بقوانين حقوق النشر والملكية الفكرية.</p>
+            <p>يُمنح المستخدم ترخيصاً محدوداً وغير حصري وغير قابل للنقل لاستخدام التطبيق للأغراض الشخصية والتعليمية فقط.</p>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#169;</span> 5. Intellectual Property</h2>
+            <p>All content in the App, including text, images, audio, designs, logos, and software, is the exclusive property of Mesesilia Labs and is protected by copyright and intellectual property laws.</p>
+            <p>Users are granted a limited, non-exclusive, non-transferable license to use the App for personal and educational purposes only.</p>
+        </div>
+    </div>
+
+    <!-- 6. AI Features -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#129302;</span> ٦. ميزات الذكاء الاصطناعي</h2>
+            <p>يستخدم التطبيق تقنيات الذكاء الاصطناعي لتقييم النطق وتقديم ملاحظات تعليمية. يرجى ملاحظة أن:</p>
+            <ul>
+                <li>تقييمات الذكاء الاصطناعي تقريبية وليست بديلاً عن مدرس لغة محترف</li>
+                <li>التسجيلات الصوتية تُعالج فوراً ولا يتم تخزينها بشكل دائم</li>
+                <li>قد تختلف دقة التقييم حسب جودة الميكروفون والبيئة المحيطة</li>
+                <li>نستخدم خدمات طرف ثالث (OpenAI) لمعالجة الصوت، وتخضع للشروط الخاصة بهم</li>
+            </ul>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#129302;</span> 6. AI Features</h2>
+            <p>The App uses artificial intelligence technologies for pronunciation evaluation and educational feedback. Please note that:</p>
+            <ul>
+                <li>AI evaluations are approximate and not a substitute for a professional language tutor</li>
+                <li>Voice recordings are processed immediately and are not permanently stored</li>
+                <li>Evaluation accuracy may vary depending on microphone quality and surrounding environment</li>
+                <li>We use third-party services (OpenAI) for audio processing, subject to their own terms</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 7. Privacy -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128274;</span> ٧. الخصوصية</h2>
+            <p>استخدامك للتطبيق يخضع أيضاً لسياسة الخصوصية الخاصة بنا. يرجى مراجعتها للتعرف على كيفية جمع بياناتك واستخدامها وحمايتها.</p>
+            <div class="highlight-box">
+                <p>نحن نلتزم بحماية خصوصيتك ولا نبيع بياناتك الشخصية لأي طرف ثالث.</p>
+            </div>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128274;</span> 7. Privacy</h2>
+            <p>Your use of the App is also subject to our Privacy Policy. Please review it to understand how we collect, use, and protect your data.</p>
+            <div class="highlight-box">
+                <p>We are committed to protecting your privacy and do not sell your personal data to any third party.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. Content Updates -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128260;</span> ٨. تحديثات المحتوى والخدمة</h2>
+            <p>نحتفظ بالحق في:</p>
+            <ul>
+                <li>تحديث محتوى التطبيق وإضافة دروس جديدة في أي وقت</li>
+                <li>تعديل أو إزالة ميزات التطبيق</li>
+                <li>إيقاف الخدمة مؤقتاً للصيانة أو التحديثات</li>
+                <li>تغيير هذه الاتفاقية مع إشعار المستخدمين بالتغييرات الجوهرية</li>
+            </ul>
+            <div class="highlight-box">
+                <p>في حالة تحديث هذه الاتفاقية، سيتم إشعارك داخل التطبيق وسيُطلب منك الموافقة على الشروط الجديدة لمواصلة الاستخدام.</p>
+            </div>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128260;</span> 8. Content and Service Updates</h2>
+            <p>We reserve the right to:</p>
+            <ul>
+                <li>Update App content and add new lessons at any time</li>
+                <li>Modify or remove App features</li>
+                <li>Temporarily suspend the service for maintenance or updates</li>
+                <li>Change these terms with notification of material changes to users</li>
+            </ul>
+            <div class="highlight-box">
+                <p>If these terms are updated, you will be notified within the App and asked to agree to the new terms to continue using the service.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 9. Disclaimer -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#9888;</span> ٩. إخلاء المسؤولية</h2>
+            <p>يُقدم التطبيق "كما هو" دون أي ضمانات صريحة أو ضمنية. لا نضمن أن:</p>
+            <ul>
+                <li>التطبيق سيكون متاحاً دون انقطاع أو خالياً من الأخطاء</li>
+                <li>المحتوى التعليمي سيحقق نتائج محددة في تعلم اللغة</li>
+                <li>تقييمات الذكاء الاصطناعي ستكون دقيقة بنسبة 100%</li>
+            </ul>
+            <p>التطبيق أداة مساعدة للتعلم وليس بديلاً عن التعليم الأكاديمي الرسمي.</p>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#9888;</span> 9. Disclaimer</h2>
+            <p>The App is provided "as is" without any express or implied warranties. We do not guarantee that:</p>
+            <ul>
+                <li>The App will be available without interruption or free of errors</li>
+                <li>The educational content will achieve specific language learning results</li>
+                <li>AI evaluations will be 100% accurate</li>
+            </ul>
+            <p>The App is a learning aid and not a substitute for formal academic education.</p>
+        </div>
+    </div>
+
+    <!-- 10. Termination -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#128683;</span> ١٠. إنهاء الحساب</h2>
+            <p>يمكنك حذف حسابك في أي وقت. كما نحتفظ بالحق في تعليق أو إنهاء حسابك في حالة:</p>
+            <ul>
+                <li>انتهاك هذه الاتفاقية</li>
+                <li>إساءة استخدام التطبيق أو خدماته</li>
+                <li>أي سلوك يضر بالتطبيق أو مستخدميه الآخرين</li>
+            </ul>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128683;</span> 10. Account Termination</h2>
+            <p>You can delete your account at any time. We also reserve the right to suspend or terminate your account in case of:</p>
+            <ul>
+                <li>Violation of these terms</li>
+                <li>Misuse of the App or its services</li>
+                <li>Any behavior that harms the App or its other users</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 11. Governing Law -->
+    <div class="section">
+        <div class="ar">
+            <h2><span class="icon">&#9878;</span> ١١. القانون المعمول به</h2>
+            <p>تخضع هذه الاتفاقية وتُفسر وفقاً للقوانين المعمول بها. أي نزاعات تنشأ عن استخدام التطبيق يتم حلها بالتراضي أولاً، وفي حالة تعذر ذلك، من خلال الجهات القضائية المختصة.</p>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#9878;</span> 11. Governing Law</h2>
+            <p>These terms are governed by and construed in accordance with applicable laws. Any disputes arising from the use of the App shall be resolved amicably first, and if not possible, through the competent judicial authorities.</p>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section contact-card">
+        <div class="ar">
+            <h2><span class="icon">&#128231;</span> تواصل معنا</h2>
+            <p>إذا كان لديك أي أسئلة حول هذه الاتفاقية:</p>
+            <p><strong>المطوّر:</strong> Mesesilia Labs</p>
+            <p><strong>البريد الإلكتروني:</strong> <a href="mailto:e.mmnaguib@gmail.com">e.mmnaguib@gmail.com</a></p>
+        </div>
+        <div class="en">
+            <h2><span class="icon">&#128231;</span> Contact Us</h2>
+            <p>If you have any questions about these terms:</p>
+            <p><strong>Developer:</strong> Mesesilia Labs</p>
+            <p><strong>Email:</strong> <a href="mailto:e.mmnaguib@gmail.com">e.mmnaguib@gmail.com</a></p>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="ar">&copy; ٢٠٢٦ Lære Norsk. Mesesilia Labs. جميع الحقوق محفوظة.</div>
+    <div class="en">&copy; 2026 Lære Norsk. Mesesilia Labs. All rights reserved.</div>
+</div>
+
+<script>
+    function switchLang(lang) {
+        const body = document.body;
+        const btnAr = document.getElementById('btn-ar');
+        const btnEn = document.getElementById('btn-en');
+        if (lang === 'en') {
+            body.classList.add('show-en');
+            document.documentElement.setAttribute('dir', 'ltr');
+            document.documentElement.setAttribute('lang', 'en');
+            btnEn.classList.add('active');
+            btnAr.classList.remove('active');
+        } else {
+            body.classList.remove('show-en');
+            document.documentElement.setAttribute('dir', 'rtl');
+            document.documentElement.setAttribute('lang', 'ar');
+            btnAr.classList.add('active');
+            btnEn.classList.remove('active');
+        }
+    }
+</script>
+
+</body>
+</html>
