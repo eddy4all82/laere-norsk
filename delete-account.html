@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حذف الحساب - Lære Norsk | Delete Account</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            color: #212121;
+            line-height: 1.8;
+        }
+        .header {
+            background: #1a237e;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .app-logo {
+            width: 70px; height: 70px; border-radius: 18px;
+            background: #ffab00; color: #1a237e;
+            font-size: 30px; font-weight: 900;
+            display: inline-flex; align-items: center; justify-content: center;
+            margin-bottom: 12px;
+        }
+        .header h1 { font-size: 22px; margin-bottom: 5px; }
+        .header p { font-size: 14px; opacity: 0.8; }
+        .lang-switch {
+            text-align: center; padding: 15px;
+            background: #e8eaf6;
+        }
+        .lang-switch button {
+            padding: 8px 24px; margin: 0 5px;
+            border: 2px solid #1a237e; border-radius: 20px;
+            background: white; color: #1a237e;
+            font-size: 14px; font-weight: 600;
+            cursor: pointer;
+        }
+        .lang-switch button.active {
+            background: #1a237e; color: white;
+        }
+        .content { max-width: 700px; margin: 0 auto; padding: 30px 20px; }
+        .card {
+            background: white; border-radius: 16px;
+            padding: 30px; margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            color: #1a237e; font-size: 20px;
+            margin-bottom: 15px; padding-bottom: 10px;
+            border-bottom: 2px solid #e8eaf6;
+        }
+        .card h3 { color: #1a237e; font-size: 16px; margin: 15px 0 8px; }
+        .steps { counter-reset: step; list-style: none; padding: 0; }
+        .steps li {
+            counter-increment: step;
+            padding: 12px 0 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex; align-items: flex-start; gap: 12px;
+        }
+        .steps li:last-child { border-bottom: none; }
+        .steps li::before {
+            content: counter(step);
+            background: #1a237e; color: white;
+            width: 28px; height: 28px; border-radius: 50%;
+            display: inline-flex; align-items: center; justify-content: center;
+            font-size: 14px; font-weight: 700; flex-shrink: 0;
+        }
+        .warning {
+            background: #fff3e0; border-right: 4px solid #ff6f00;
+            padding: 15px; border-radius: 8px; margin: 15px 0;
+        }
+        .warning-en {
+            border-right: none; border-left: 4px solid #ff6f00;
+        }
+        .email-link {
+            display: inline-block; background: #1a237e; color: white;
+            padding: 12px 30px; border-radius: 10px;
+            text-decoration: none; font-weight: 700; font-size: 16px;
+            margin-top: 10px;
+        }
+        .email-link:hover { background: #283593; }
+        .data-table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        .data-table th, .data-table td {
+            padding: 10px; text-align: right;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .data-table th { background: #f5f5f5; color: #1a237e; font-size: 14px; }
+        .data-table td { font-size: 14px; }
+        .badge-delete { color: #f44336; font-weight: 600; }
+        .badge-keep { color: #ff6f00; font-weight: 600; }
+        .footer {
+            text-align: center; padding: 20px;
+            color: #757575; font-size: 13px;
+        }
+        .en { display: none; }
+        body.show-en .ar { display: none !important; }
+        body.show-en .en { display: block !important; }
+        body.show-en { direction: ltr; }
+        body.show-en .data-table th,
+        body.show-en .data-table td { text-align: left; }
+        body.show-en .warning { border-right: none; border-left: 4px solid #ff6f00; }
+        body.show-en .steps li { flex-direction: row-reverse; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="app-logo">MN</div>
+        <h1 class="ar">حذف الحساب - Lære Norsk</h1>
+        <h1 class="en">Delete Account - Lære Norsk</h1>
+        <p class="ar">بواسطة Mesesilia Labs</p>
+        <p class="en">by Mesesilia Labs</p>
+    </div>
+
+    <div class="lang-switch">
+        <button class="active" onclick="showAr()">العربية</button>
+        <button onclick="showEn()">English</button>
+    </div>
+
+    <!-- ARABIC VERSION -->
+    <div class="content ar">
+        <div class="card">
+            <h2>كيفية حذف حسابك</h2>
+            <p>يمكنك طلب حذف حسابك وجميع بياناتك المرتبطة به من تطبيق Lære Norsk. اتبع الخطوات التالية:</p>
+
+            <h3>الطريقة 1: من داخل التطبيق</h3>
+            <ol class="steps">
+                <li>افتح تطبيق Lære Norsk</li>
+                <li>اذهب إلى تبويب "حسابي"</li>
+                <li>اضغط على "حذف الحساب"</li>
+                <li>أكّد طلب الحذف</li>
+            </ol>
+
+            <h3>الطريقة 2: عبر البريد الإلكتروني</h3>
+            <p>أرسل بريداً إلكترونياً إلى العنوان التالي مع ذكر البريد الإلكتروني المسجّل في حسابك:</p>
+            <a href="mailto:e.mmnaguib@gmail.com?subject=طلب حذف حساب Lære Norsk&body=أرغب في حذف حسابي المسجل بالبريد الإلكتروني: [أدخل بريدك هنا]" class="email-link">
+                e.mmnaguib@gmail.com
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>البيانات التي سيتم حذفها</h2>
+            <table class="data-table">
+                <tr><th>نوع البيانات</th><th>الإجراء</th></tr>
+                <tr><td>معلومات الحساب (الاسم، البريد الإلكتروني)</td><td class="badge-delete">حذف نهائي</td></tr>
+                <tr><td>صورة الملف الشخصي</td><td class="badge-delete">حذف نهائي</td></tr>
+                <tr><td>بيانات التقدم والإنجازات</td><td class="badge-delete">حذف نهائي</td></tr>
+                <tr><td>تسجيلات النطق الصوتية</td><td class="badge-delete">لا تُخزّن أصلاً (تُحذف فوراً بعد التقييم)</td></tr>
+                <tr><td>إعدادات التطبيق والتفضيلات</td><td class="badge-delete">حذف نهائي</td></tr>
+            </table>
+
+            <div class="warning">
+                <strong>ملاحظة مهمة:</strong> عملية الحذف نهائية ولا يمكن التراجع عنها. سيتم حذف جميع بياناتك خلال 30 يوماً من تاريخ الطلب.
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>مدة الاحتفاظ بالبيانات</h2>
+            <p>بعد تأكيد طلب الحذف:</p>
+            <ol class="steps">
+                <li>يتم تعطيل الحساب فوراً</li>
+                <li>يتم حذف جميع البيانات الشخصية خلال 30 يوماً</li>
+                <li>لا يتم الاحتفاظ بأي بيانات بعد فترة الحذف</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- ENGLISH VERSION -->
+    <div class="content en">
+        <div class="card">
+            <h2>How to Delete Your Account</h2>
+            <p>You can request deletion of your account and all associated data from the Lære Norsk app. Follow these steps:</p>
+
+            <h3>Method 1: From Within the App</h3>
+            <ol class="steps">
+                <li>Open the Lære Norsk app</li>
+                <li>Go to the "My Account" tab</li>
+                <li>Tap "Delete Account"</li>
+                <li>Confirm the deletion request</li>
+            </ol>
+
+            <h3>Method 2: Via Email</h3>
+            <p>Send an email to the address below, including the email address registered with your account:</p>
+            <a href="mailto:e.mmnaguib@gmail.com?subject=Lære Norsk Account Deletion Request&body=I would like to delete my account registered with email: [enter your email here]" class="email-link">
+                e.mmnaguib@gmail.com
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>Data That Will Be Deleted</h2>
+            <table class="data-table">
+                <tr><th>Data Type</th><th>Action</th></tr>
+                <tr><td>Account information (name, email)</td><td class="badge-delete">Permanently deleted</td></tr>
+                <tr><td>Profile picture</td><td class="badge-delete">Permanently deleted</td></tr>
+                <tr><td>Progress and achievements data</td><td class="badge-delete">Permanently deleted</td></tr>
+                <tr><td>Voice pronunciation recordings</td><td class="badge-delete">Never stored (deleted immediately after evaluation)</td></tr>
+                <tr><td>App settings and preferences</td><td class="badge-delete">Permanently deleted</td></tr>
+            </table>
+
+            <div class="warning warning-en">
+                <strong>Important:</strong> Account deletion is permanent and cannot be undone. All your data will be deleted within 30 days of the request.
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Data Retention Period</h2>
+            <p>After confirming the deletion request:</p>
+            <ol class="steps">
+                <li>Account is deactivated immediately</li>
+                <li>All personal data is deleted within 30 days</li>
+                <li>No data is retained after the deletion period</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Mesesilia Labs. All rights reserved.</p>
+    </div>
+
+    <script>
+        function showEn() {
+            document.body.classList.add('show-en');
+            document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.lang-switch button')[1].classList.add('active');
+        }
+        function showAr() {
+            document.body.classList.remove('show-en');
+            document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.lang-switch button')[0].classList.add('active');
+        }
+    </script>
+</body>
+</html>
